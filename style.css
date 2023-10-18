@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    line-height: 1.7;
+    background: linear-gradient(135deg, #FAFAFA 0%, #EDEDED 100%);
+    color: #1A1A1A;
+    overflow-x: hidden;
+    transition: background 0.3s ease;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #1A1A1A;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.scrolly {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+}
+
+.step {
+    margin: 8rem 0;
+    padding: 5rem;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.step:hover {
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.09);
+    transform: translateY(-4px);
+}
+
+.definition-container {
+    background-color: #FFFFFF;
+    padding: 3rem;
+    margin: 3rem 0;
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.03);
+    position: relative;
+}
+
+.definition-container:before {
+    content: "";
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    width: 30px;
+    height: 30px;
+    background: url('definition-icon.svg') no-repeat center;
+    background-size: contain;
+    opacity: 0.2;
+}
+
+.definition-container:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px);
+}
+
+select {
+    padding: 1em;
+    font-size: 1.2em;
+    margin-top: 2em;
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #E0E0E0;
+    border-radius: 12px;
+    appearance: none;
+    background-color: #FFFFFF;
+    color: #1A1A1A;
+    cursor: pointer;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+select:hover {
+    border-color: #4A90E2;
+    transform: scale(1.03);
+}
+
+.chart-container {
+    width: 80%;
+    height: 300px; /* Increase the height as needed */
+    margin: 0 auto;
+}
+
+
